@@ -56,7 +56,7 @@ class GetEmailCampaigns implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'campaigns' => '\Brevo\Client\Model\AllOfgetEmailCampaignsCampaignsItems[]',
+        'campaigns' => 'object[]',
         'count' => 'int'
     ];
 
@@ -206,11 +206,10 @@ class GetEmailCampaigns implements ModelInterface, ArrayAccess
         return count($this->listInvalidProperties()) === 0;
     }
 
-
     /**
      * Gets campaigns
      *
-     * @return \Brevo\Client\Model\AllOfgetEmailCampaignsCampaignsItems[]
+     * @return object[]
      */
     public function getCampaigns()
     {
@@ -220,7 +219,7 @@ class GetEmailCampaigns implements ModelInterface, ArrayAccess
     /**
      * Sets campaigns
      *
-     * @param \Brevo\Client\Model\AllOfgetEmailCampaignsCampaignsItems[] $campaigns campaigns
+     * @param object[] $campaigns campaigns
      *
      * @return $this
      */
