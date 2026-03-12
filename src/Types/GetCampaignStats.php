@@ -11,7 +11,7 @@ class GetCampaignStats extends JsonSerializableType
      * @var int $appleMppOpens Numbers of times your email has been opened automatically through Apple MPP.
      */
     #[JsonProperty('appleMppOpens')]
-    public int $appleMppOpens;
+    public ?int $appleMppOpens;
 
     /**
      * @var int $clickers Number of total clicks for the campaign
@@ -59,7 +59,7 @@ class GetCampaignStats extends JsonSerializableType
      * @var float $opensRate Percentage of recipients who open the email out of your total number of recipients. Depending on your Campaign settings, they may include Apple MPP opens.
      */
     #[JsonProperty('opensRate')]
-    public float $opensRate;
+    public ?float $opensRate;
 
     /**
      * @var ?int $returnBounce Total number of non-delivered campaigns for a particular campaign id.
